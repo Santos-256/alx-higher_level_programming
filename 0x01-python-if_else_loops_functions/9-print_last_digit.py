@@ -1,10 +1,8 @@
 #!/usr/bin/python3
 def print_last_digit(number):
-    last_digit = abs(number) % 10
-   # for last_digit in number:
-    #    if last_digit < 0:
-     #       last_digit = number % -10
-      #  elif last_digit >= 0:
-       #     last_digit = number % 10
-        print("{:d}".format(last_digit), end='')
-        return last_digit
+    if number < 0:
+        last_num = (-number % 10)
+    elif number >= 0:
+        last_num = number % 10
+    print("{:d}".format(last_num), end="")
+    return last_num
