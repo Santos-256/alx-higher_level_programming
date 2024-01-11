@@ -28,12 +28,15 @@ class Square:
 
     def area(self):
         """Return the current area of the square."""
-        return self.area() == other.area()
+        #return self.area() == other.area()
+        return self.size * self.size
 
     def __ne__(self, other):
         """Define the != comparison to a Square."""
-        return self.area() != other.area()
+        #return self.area() != other.area()
+        return self.size != other.size
 
     def __ge__(self, other):
         """Define the >= compmarison to a Square."""
-        return self.area() >= other.area()
+        #return self.area() >= other.area()
+        return self.size >= other.size
