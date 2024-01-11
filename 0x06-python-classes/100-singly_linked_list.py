@@ -28,10 +28,10 @@ class Node:
             raise TypeError("data must be an integer")
         self.__data = value
 
+    @property
     def next_node(self):
         """Get the next_node of the Node"""
         return self.__next_node
-    NextNode = property(next_node)
 
     @next_node.setter
     def next_node(self, value):
