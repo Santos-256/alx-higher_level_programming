@@ -15,7 +15,7 @@ class Square:
         """
         self.size = size
 
-    def size(self):
+    def get_size(self):
         """Get the current size of the square"""
         return self.__size
 
