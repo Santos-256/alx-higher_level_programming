@@ -17,14 +17,14 @@ class Node:
         self.data = data
         self.next_node = next_node
 
+    @property
     def data(self):
         """Get/set the data of the Node."""
         return self.__data
-    data = property(data)
 
     @data.setter
     def data(self, value):
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
 
